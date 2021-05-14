@@ -1,0 +1,8 @@
+allennlp train "training_config/declutr.jsonnet" \
+    --overrides "{'train_data_path': 'path/to/output/wikitext-103/train.txt'}" \
+    --include-package "declutr"
+
+allennlp train "training_config/declutr.jsonnet" \
+    --serialization-dir "output" \
+    --overrides "{'train_data_path': 'path/to/output/wikitext-103/train.txt'}" \
+    --include-package "declutr"

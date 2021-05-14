@@ -65,7 +65,7 @@ class DeCLUTR(Model):
     ) -> None:
 
         super().__init__(vocab, **kwargs)
-        self._text_field_embedder = text_field_embedder
+        self._text_field_embedder = text_field_embedder # dit is de bert encoder
         # Prevents the user from having to specify the tokenizer / masked language modeling
         # objective. In the future it would be great to come up with something more elegant.
         token_embedder = self._text_field_embedder._token_embedders["tokens"]
@@ -73,11 +73,13 @@ class DeCLUTR(Model):
         if self._masked_language_modeling:
             self._tokenizer = token_embedder.tokenizer
 
+
         # Default to mean BOW pooler. This performs well and so it serves as a sensible default.
         self._seq2vec_encoder = seq2vec_encoder or BagOfEmbeddingsEncoder(
             text_field_embedder.get_output_dim(), averaged=True
         )
         self._feedforward = feedforward
+
 
         self._miner = miner
         self._loss = loss

@@ -1,0 +1,77 @@
+{
+    "dataset_reader": {
+        "type": "declutr",
+        "lazy": true,
+        "max_span_len": 512,
+        "min_span_len": 32,
+        "num_anchors": 2,
+        "num_positives": 2,
+        "token_indexers": {
+            "tokens": {
+                "type": "pretrained_transformer",
+                "model_name": "distilroberta-base"
+            }
+        },
+        "tokenizer": {
+            "type": "pretrained_transformer",
+            "max_length": 510,
+            "model_name": "distilroberta-base"
+        }
+    },
+    "model": {
+        "type": "declutr",
+        "loss": {
+            "type": "nt_xent",
+            "temperature": 0.05
+        },
+        "text_field_embedder": {
+            "type": "mlm",
+            "token_embedders": {
+                "tokens": {
+                    "type": "pretrained_transformer_mlm",
+                    "masked_language_modeling": true,
+                    "model_name": "distilroberta-base"
+                }
+            }
+        }
+    },
+    "train_data_path": "path/to/output/wikitext-103/train.txt",
+    "trainer": {
+        "checkpointer": {
+            "num_serialized_models_to_keep": -1
+        },
+        "grad_norm": 1,
+        "learning_rate_scheduler": {
+            "type": "slanted_triangular"
+        },
+        "num_epochs": 1,
+        "optimizer": {
+            "type": "huggingface_adamw",
+            "correct_bias": false,
+            "eps": 1e-06,
+            "lr": 5e-05,
+            "parameter_groups": [
+                [
+                    [
+                        "bias",
+                        "LayerNorm\\.weight",
+                        "layer_norm\\.weight"
+                    ],
+                    {
+                        "weight_decay": 0
+                    }
+                ]
+            ],
+            "weight_decay": 0.1
+        },
+        "use_amp": false
+    },
+    "vocabulary": {
+        "type": "empty"
+    },
+    "data_loader": {
+        "batch_size": 4,
+        "drop_last": true,
+        "num_workers": 1
+    }
+}
