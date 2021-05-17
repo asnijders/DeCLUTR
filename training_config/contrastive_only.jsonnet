@@ -5,6 +5,7 @@ local transformer_model = std.extVar("TRANSFORMER_MODEL");
 // This will be used to set the max/min # of tokens in the positive and negative examples.
 local max_length = 512;
 local min_length = 32;
+local transformer_model = "distilroberta-base";
 
 {
     "vocabulary": {
@@ -29,7 +30,7 @@ local min_length = 32;
                 "model_name": transformer_model,
             },
         },
-    }, 
+    },
     "train_data_path": null,
     "model": {
         "type": "declutr",
@@ -49,13 +50,13 @@ local min_length = 32;
         },
     },
     "data_loader": {
-        "batch_size": 4,
+        "batch_size": 1,
         "num_workers": 1,
         "drop_last": true,
     },
     "trainer": {
         // Set use_amp to true to use automatic mixed-precision during training (if your GPU supports it)
-        "use_amp": true,
+        "use_amp": false,
         "optimizer": {
             "type": "huggingface_adamw",
             "lr": 5e-5,
@@ -77,4 +78,3 @@ local min_length = 32;
             "type": "slanted_triangular",
         },
     },
-}

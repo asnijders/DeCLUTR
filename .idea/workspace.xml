@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4c968c87-8899-43f6-b37f-4d738bd03a32" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/NOTICE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_static/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_static/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/breadcrumbs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/locale/de/LC_MESSAGES/sphinx.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/locale/en/LC_MESSAGES/sphinx.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/locale/es/LC_MESSAGES/sphinx.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/locale/et/LC_MESSAGES/sphinx.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/locale/fr/LC_MESSAGES/sphinx.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/locale/nl/LC_MESSAGES/sphinx.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/locale/pt_BR/LC_MESSAGES/sphinx.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/locale/ru/LC_MESSAGES/sphinx.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/locale/sv/LC_MESSAGES/sphinx.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/locale/tr/LC_MESSAGES/sphinx.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/locale/zh_CN/LC_MESSAGES/sphinx.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/searchbox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/badge_only.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/fonts/Roboto-Slab-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/fonts/Roboto-Slab-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/fonts/Roboto-Slab-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/fonts/Roboto-Slab-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/fonts/lato-bold-italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/fonts/lato-bold-italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/fonts/lato-bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/fonts/lato-bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/fonts/lato-normal-italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/fonts/lato-normal-italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/fonts/lato-normal.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/fonts/lato-normal.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/css/theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/js/badge_only.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/static/js/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/theme.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/_themes/sphinx_rtd_theme/versions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/conf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/contact.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/20news_semantic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/20news_top2vec.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/BiEncoder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/Bi_vs_Cross-Encoder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/CrossEncoder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/InformationRetrieval.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/SBERT_Architecture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/SBERT_Siamese_Network.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/SBERT_SoftmaxLoss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/SemanticSearch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/augsbert-domain-transfer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/augsbert-indomain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/logo.xcf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/logo_org.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/monolingual-distillation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/img/multilingual-distillation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/installation.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/package_reference/SentenceTransformer.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/package_reference/cross_encoder.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/package_reference/datasets.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/package_reference/evaluation.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/package_reference/losses.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/package_reference/models.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/package_reference/util.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/pretrained-models/msmarco-v1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/pretrained-models/msmarco-v2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/pretrained-models/nli-models.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/pretrained-models/sts-models.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/pretrained-models/wikipedia-sections-models.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/pretrained_cross-encoders.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/pretrained_models.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/publications.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/quickstart.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/training/overview.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/docs/usage/semantic_textual_similarity.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/clustering/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/clustering/agglomerative.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/clustering/fast_clustering.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/clustering/kmeans.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/computing-embeddings/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/computing-embeddings/computing_embeddings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/computing-embeddings/computing_embeddings_mutli_gpu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/cross-encoder/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/cross-encoder/cross-encoder_reranking.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/cross-encoder/cross-encoder_usage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/information-retrieval/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/information-retrieval/in_document_search_crossencoder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/information-retrieval/qa_retrieval_simple_wikipedia.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/parallel-sentence-mining/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/parallel-sentence-mining/bitext_mining.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/parallel-sentence-mining/bitext_mining_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/parallel-sentence-mining/bucc2018.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/paraphrase-mining/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/semantic-search/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/semantic-search/semantic_search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/semantic-search/semantic_search_quora_annoy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/semantic-search/semantic_search_quora_elasticsearch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/semantic-search/semantic_search_quora_faiss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/semantic-search/semantic_search_quora_hnswlib.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/semantic-search/semantic_search_quora_pytorch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/text-summarization/LexRank.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/text-summarization/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/applications/text-summarization/text-summarization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/evaluation/evaluation_inference_speed.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/evaluation/evaluation_stsbenchmark.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/evaluation/evaluation_stsbenchmark_sbert-wk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/evaluation/evaluation_translation_matching.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/avg_word_embeddings/training_stsbenchmark_avg_word_embeddings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/avg_word_embeddings/training_stsbenchmark_bilstm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/avg_word_embeddings/training_stsbenchmark_bow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/avg_word_embeddings/training_stsbenchmark_cnn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/avg_word_embeddings/training_stsbenchmark_tf-idf_word_embeddings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/cross-encoder/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/cross-encoder/training_nli.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/cross-encoder/training_quora_duplicate_questions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/cross-encoder/training_stsbenchmark.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/data_augmentation/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/data_augmentation/train_sts_indomain_bm25.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/data_augmentation/train_sts_indomain_nlpaug.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/data_augmentation/train_sts_indomain_semantic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/data_augmentation/train_sts_qqp_crossdomain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/data_augmentation/train_sts_seed_optimization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/distillation/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/distillation/dimensionality_reduction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/distillation/model_distillation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/ms_marco/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/ms_marco/eval_cross-encoder-trec-dl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/ms_marco/train_bi-encoder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/ms_marco/train_cross-encoder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/multilingual/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/multilingual/get_parallel_data_opus.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/multilingual/get_parallel_data_tatoeba.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/multilingual/get_parallel_data_ted2020.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/multilingual/get_parallel_data_wikimatrix.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/multilingual/make_multilingual.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/multilingual/make_multilingual_sys.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/nli/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/nli/training_nli.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/other/training_batch_hard_trec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/other/training_multi-task.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/other/training_wikipedia_sections.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/quora_duplicate_questions/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/quora_duplicate_questions/application_duplicate_questions_mining.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/quora_duplicate_questions/create_splits.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/quora_duplicate_questions/training_MultipleNegativesRankingLoss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/quora_duplicate_questions/training_OnlineContrastiveLoss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/quora_duplicate_questions/training_multi-task-learning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/sts/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/sts/training_stsbenchmark.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/examples/training/sts/training_stsbenchmark_continue_training.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/index.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/LoggingHandler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/SentenceTransformer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/cross_encoder/CrossEncoder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/cross_encoder/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/cross_encoder/evaluation/CEBinaryAccuracyEvaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/cross_encoder/evaluation/CEBinaryClassificationEvaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/cross_encoder/evaluation/CECorrelationEvaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/cross_encoder/evaluation/CERerankingEvaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/cross_encoder/evaluation/CESoftmaxAccuracyEvaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/cross_encoder/evaluation/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/evaluation/BinaryClassificationEvaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/evaluation/EmbeddingSimilarityEvaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/evaluation/InformationRetrievalEvaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/evaluation/LabelAccuracyEvaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/evaluation/MSEEvaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/evaluation/MSEEvaluatorFromDataFrame.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/evaluation/ParaphraseMiningEvaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/evaluation/SentenceEvaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/evaluation/SequentialEvaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/evaluation/SimilarityFunction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/evaluation/TranslationEvaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/evaluation/TripletEvaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/evaluation/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/losses/BatchAllTripletLoss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/losses/BatchHardSoftMarginTripletLoss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/losses/BatchHardTripletLoss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/losses/BatchSemiHardTripletLoss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/losses/ContrastiveLoss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/losses/CosineSimilarityLoss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/losses/MSELoss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/losses/MegaBatchMarginLoss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/losses/MultipleNegativesRankingLoss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/losses/OnlineContrastiveLoss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/losses/SoftmaxLoss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/losses/TripletLoss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/losses/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/ALBERT.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/Asym.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/BERT.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/BoW.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/CNN.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/CamemBERT.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/Dense.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/DistilBERT.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/LSTM.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/Normalize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/Pooling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/RoBERTa.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/T5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/Transformer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/WKPooling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/WeightedLayerPooling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/WordEmbeddings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/WordWeights.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/XLMRoBERTa.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/XLNet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/tokenizer/PhraseTokenizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/tokenizer/WhitespaceTokenizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/tokenizer/WordTokenizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/models/tokenizer/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/readers/InputExample.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/readers/LabelSentenceReader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/readers/NLIDataReader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/readers/PairedFilesReader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/readers/STSDataReader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/readers/TripletReader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/readers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/sentence_transformers/util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/setup.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/tests/test_BinaryClassificationEvaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/tests/test_compute_embeddings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/tests/test_cross_encoder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/tests/test_pretrained_stsb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/tests/test_train_stsb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/tests/test_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentence_transformers_editted/tests/test_wkpooling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/declutr/dataset_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/declutr/dataset_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/declutr/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/declutr/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/declutr/modules/token_embedders/pretrained_transformer_embedder_mlm.py" beforeDir="false" afterPath="$PROJECT_DIR$/declutr/modules/token_embedders/pretrained_transformer_embedder_mlm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_config/contrastive_only.jsonnet" beforeDir="false" afterPath="$PROJECT_DIR$/training_config/contrastive_only.jsonnet" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1sWEmR3E1rz3ofzyYFcaJOPJKKX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/training_config" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c968c87-8899-43f6-b37f-4d738bd03a32" name="Default Changelist" comment="" />
+      <created>1620980106564</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620980106564</updated>
+      <workItem from="1620980110130" duration="636000" />
+      <workItem from="1620981031563" duration="11854000" />
+      <workItem from="1621238610678" duration="5018000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
