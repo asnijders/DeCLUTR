@@ -50,7 +50,7 @@ local transformer_model = "distilroberta-base";
         },
     },
     "data_loader": {
-        "batch_size": 1,
+        "batch_size": 2,
         "num_workers": 1,
         "drop_last": true,
     },

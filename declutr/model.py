@@ -15,7 +15,6 @@ from declutr.common.model_utils import all_gather_anchor_positive_pairs, unpack_
 from declutr.losses import PyTorchMetricLearningLoss
 from declutr.miners import PyTorchMetricLearningMiner
 
-
 @Model.register("declutr")
 class DeCLUTR(Model):
     """
@@ -72,7 +71,6 @@ class DeCLUTR(Model):
         self._masked_language_modeling = token_embedder.masked_language_modeling
         if self._masked_language_modeling:
             self._tokenizer = token_embedder.tokenizer
-
 
         # Default to mean BOW pooler. This performs well and so it serves as a sensible default.
         self._seq2vec_encoder = seq2vec_encoder or BagOfEmbeddingsEncoder(
@@ -145,10 +143,9 @@ class DeCLUTR(Model):
                     embedded_positives,
                     (embedded_anchors.size(0), -1, embedded_anchors.size(-1)),
                 )
+
                 # Shape: (num_anchors, embedding_dim)
                 embedded_positives = torch.mean(embedded_positives, dim=1)
-
-                print(embedded_positives.shape)
 
                 # If we are training on multiple GPUs using DistributedDataParallel, then a naive
                 # application would result in 2 * (batch_size/n_gpus - 1) number of negatives per
@@ -163,8 +160,10 @@ class DeCLUTR(Model):
                 embeddings, labels = self._loss.get_embeddings_and_labels(
                     embedded_anchors, embedded_positives
                 )
+
                 indices_tuple = self._miner(embeddings, labels) if self._miner is not None else None
                 contrastive_loss = self._loss(embeddings, labels, indices_tuple)
+
                 # Loss needs to be scaled by world size when using DistributedDataParallel
                 # See: https://amsword.medium.com/gradient-backpropagation-with-torch-distributed-all-gather-9f3941a381f8
                 if util.is_distributed():

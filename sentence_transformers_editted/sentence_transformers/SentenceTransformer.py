@@ -155,7 +155,7 @@ class SentenceTransformer(nn.Sequential):
         # print(sentences.shape)
         # sys.exit()
 
-        self.eval()
+        self.train()
         # if show_progress_bar is None:
         #     show_progress_bar = (logger.getLogger().getEffectiveLevel()==logger.INFO or logger.getLogger().getEffectiveLevel()==logger.DEBUG)
 
@@ -183,26 +183,21 @@ class SentenceTransformer(nn.Sequential):
         #     # features = self.tokenize(sentences_batch)
         features = batch_to_device(sentences, device)
 
-        with torch.no_grad():
-            out_features = self.forward(features)
-            embeddings = out_features[output_value]
+        out_features = self.forward(features)
+        embeddings = out_features[output_value]
 
-            if output_value == 'token_embeddings':
-                #Set token embeddings to 0 for padding tokens
-                input_mask = out_features['attention_mask']
-                input_mask_expanded = input_mask.unsqueeze(-1).expand(embeddings.size()).float()
-                embeddings = embeddings * input_mask_expanded
+        if output_value == 'token_embeddings':
+            #Set token embeddings to 0 for padding tokens
+            input_mask = out_features['attention_mask']
+            input_mask_expanded = input_mask.unsqueeze(-1).expand(embeddings.size()).float()
+            embeddings = embeddings * input_mask_expanded
 
-            embeddings = embeddings.detach()
+        # embeddings = embeddings.detach()
 
-            # fixes for #522 and #487
-            # to avoid oom problems on gpu with large datasets
-            if convert_to_numpy:
-                embeddings = embeddings.cpu()
-
-
-
-            embeddings
+        # fixes for #522 and #487
+        # to avoid oom problems on gpu with large datasets
+        if convert_to_numpy:
+            embeddings = embeddings.cpu()
 
         # if convert_to_tensor:
         #     all_embeddings = torch.stack(all_embeddings)

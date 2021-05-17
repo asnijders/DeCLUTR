@@ -70,7 +70,7 @@
         "type": "empty"
     },
     "data_loader": {
-        "batch_size": 1,
+        "batch_size": 2,
         "drop_last": true,
         "num_workers": 1
     }
