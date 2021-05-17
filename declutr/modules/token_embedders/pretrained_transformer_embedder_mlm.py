@@ -8,6 +8,7 @@ from allennlp.modules.token_embedders.token_embedder import TokenEmbedder
 from overrides import overrides
 from transformers import AutoConfig, AutoModelForMaskedLM
 
+from sentence_transformers_editted.sentence_transformers.SentenceTransformer import SentenceTransformer
 
 @TokenEmbedder.register("pretrained_transformer_mlm")
 class PretrainedTransformerEmbedderMLM(PretrainedTransformerEmbedder):
@@ -91,6 +92,11 @@ class PretrainedTransformerEmbedderMLM(PretrainedTransformerEmbedder):
                 model_name, True, override_weights_file, override_weights_strip_prefix
             )
             self.config = self.transformer_model.config
+
+        # TODO: deze unit vervangen met een sentence transformer (import staat al klaar)
+        # TODO 2: sentence transformer tokenization line uitzetten
+
+        self.transformer_model = SentenceTransformer('stsb-xlm-r-multilingual') #overwite transformer with sent transformer
 
         if gradient_checkpointing is not None:
             self.transformer_model.config.update({"gradient_checkpointing": gradient_checkpointing})
@@ -183,24 +189,27 @@ class PretrainedTransformerEmbedderMLM(PretrainedTransformerEmbedder):
             parameters["labels"] = masked_lm_labels
 
         masked_lm_loss = None
-        transformer_output = self.transformer_model(**parameters)
+        # transformer_output = self.transformer_model(**parameters)
+        transformer_output = self.transformer_model.encode(sentences=parameters)
 
-        if self.config.output_hidden_states:
-            # Even if masked_language_modeling is True, we may not be masked language modeling on
-            # the current batch. Check if masked language modeling labels are present in the input.
-            if "labels" in parameters:
-                masked_lm_loss = transformer_output[0]
-
-            if self._scalar_mix:
-                embeddings = self._scalar_mix(transformer_output[-1][1:])
-            else:
-                embeddings = transformer_output[-1][-1]
-        else:
-            embeddings = transformer_output[0]
+        # if self.config.output_hidden_states:
+        #     # Even if masked_language_modeling is True, we may not be masked language modeling on
+        #     # the current batch. Check if masked language modeling labels are present in the input.
+        #     if "labels" in parameters:
+        #         masked_lm_loss = transformer_output[0]
+        #
+        #     if self._scalar_mix:
+        #         embeddings = self._scalar_mix(transformer_output[-1][1:])
+        #     else:
+        #         embeddings = transformer_output[-1][-1]
+        # else:
+        #     embeddings = transformer_output[0]
 
         if fold_long_sequences:
             embeddings = self._unfold_long_sequences(
                 embeddings, segment_concat_mask, batch_size, num_segment_concat_wordpieces
             )
+
+        embeddings = transformer_output
 
         return masked_lm_loss, embeddings

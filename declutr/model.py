@@ -122,6 +122,7 @@ class DeCLUTR(Model):
 
         # If multiple anchors were sampled, we need to unpack them.
         anchors = unpack_batch(anchors)
+
         # Mask anchor input ids and get labels required for MLM.
         if self.training and self._masked_language_modeling:
             anchors = mask_tokens(anchors, self._tokenizer)
@@ -139,12 +140,15 @@ class DeCLUTR(Model):
                 # https://arxiv.org/abs/1902.09229.
                 _, embedded_positives = self._forward_internal(positives)
                 # Shape: (num_anchors, num_positives_per_anchor, embedding_dim)
+
                 embedded_positives = torch.reshape(
                     embedded_positives,
                     (embedded_anchors.size(0), -1, embedded_anchors.size(-1)),
                 )
                 # Shape: (num_anchors, embedding_dim)
                 embedded_positives = torch.mean(embedded_positives, dim=1)
+
+                print(embedded_positives.shape)
 
                 # If we are training on multiple GPUs using DistributedDataParallel, then a naive
                 # application would result in 2 * (batch_size/n_gpus - 1) number of negatives per
@@ -181,7 +185,8 @@ class DeCLUTR(Model):
         masked_lm_loss, embedded_text = self._text_field_embedder(tokens)
         mask = get_text_field_mask(tokens).float()
 
-        embedded_text = self._seq2vec_encoder(embedded_text, mask=mask)
+        # embedded_text = self._seq2vec_encoder(embedded_text, mask=mask)
+
         # Don't hold on to embeddings or projections during training.
         if output_dict is not None and not self.training:
             output_dict["embeddings"] = embedded_text.clone().detach()

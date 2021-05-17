@@ -16,7 +16,6 @@ from declutr.common.util import sanitize_text
 
 logger = logging.getLogger(__name__)
 
-
 @DatasetReader.register("declutr")
 class DeCLUTRDatasetReader(DatasetReader):
     """
@@ -166,6 +165,7 @@ class DeCLUTRDatasetReader(DatasetReader):
         # We DON'T lowercase by default, but rather allow `self._tokenizer` to decide.
         text = sanitize_text(text, lowercase=False)
 
+
         fields: Dict[str, Field] = {}
         if self.sample_spans:
             if isinstance(self._tokenizer, PretrainedTransformerTokenizer):
@@ -183,6 +183,7 @@ class DeCLUTRDatasetReader(DatasetReader):
             else:
                 tokenization_func = None
             # Choose the anchor/positives at random.
+
             anchor_spans, positive_spans = sample_anchor_positive_pairs(
                 text=text,
                 num_anchors=self._num_anchors,

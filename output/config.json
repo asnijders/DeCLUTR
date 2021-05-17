@@ -29,7 +29,7 @@
             "token_embedders": {
                 "tokens": {
                     "type": "pretrained_transformer_mlm",
-                    "masked_language_modeling": true,
+                    "masked_language_modeling": false,
                     "model_name": "distilroberta-base"
                 }
             }
@@ -70,7 +70,7 @@
         "type": "empty"
     },
     "data_loader": {
-        "batch_size": 4,
+        "batch_size": 1,
         "drop_last": true,
         "num_workers": 1
     }
