@@ -78,6 +78,8 @@ class DeCLUTR(Model):
         )
         self._feedforward = feedforward
 
+        self.counter = 1
+
 
         self._miner = miner
         self._loss = loss
@@ -116,6 +118,8 @@ class DeCLUTR(Model):
         loss : torch.FloatTensor, optional
             A scalar loss to be optimized.
         """
+
+
         output_dict: Dict[str, torch.Tensor] = {}
 
         # If multiple anchors were sampled, we need to unpack them.
@@ -172,6 +176,14 @@ class DeCLUTR(Model):
             # Loss may be derived from contrastive objective, MLM objective or both.
             if masked_lm_loss is not None:
                 output_dict["loss"] += masked_lm_loss
+
+        # print(self._text_field_embedder)
+
+        # if self.counter % 100 == 0:
+        #     self._text_field_embedder.token_embedder_tokens.transformer_model.save('saved_models/')
+        #     sys.exit()
+
+        self.counter += 1
 
         return output_dict
 
