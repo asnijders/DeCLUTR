@@ -9,8 +9,12 @@ import csv
 
 import requests
 import typer
-from declutr.common.util import sanitize_text
 
+def sanitize_text(text: str, lowercase: bool = False) -> str:
+    """Cleans text by removing whitespace, newlines and tabs and (optionally) lowercasing."""
+    sanitized_text = " ".join(text.strip().split())
+    sanitized_text = sanitized_text.lower() if lowercase else sanitized_text
+    return sanitized_text
 
 WIKITEXT_103_URL = "https://s3.amazonaws.com/research.metamind.io/wikitext/wikitext-103-raw-v1.zip"
 
@@ -26,7 +30,7 @@ def _write_output_to_disk(text: List[str], output_filepath: Path) -> None:
     output_filepath = Path(output_filepath)
     output_filepath.parents[0].mkdir(parents=True, exist_ok=True)
 
-    with open(output_filepath, "w") as f:
+    with open(output_filepath, "w", encoding='UTF-8') as f:
         # TODO (John): In the future, it might make sense to both batch and shard:
         # 1) Batch, meaning write batches of documents to a file as opposed to 1 at a time
         # 2) Shard, meaning break a file up into shard_size // len(text) files, and return a
@@ -35,11 +39,6 @@ def _write_output_to_disk(text: List[str], output_filepath: Path) -> None:
         with typer.progressbar(text, label="Writing to disk") as progress:
             for doc in progress:
                 f.write(doc.strip() + "\n")
-    typer.secho(
-        f"{SAVING} {len(text)} preprocessed documents saved to: {output_filepath}",
-        bold=True,
-    )
-
 
 def main(
     input_filepath: Optional[Path] = 'raw_data/uitspraken_van_2018_tot_2021.csv',
@@ -84,7 +83,7 @@ def main(
     # Read data
     csv.field_size_limit(sys.maxsize)
     preprocessed_documents: List[str] = []
-    with open(input_filepath) as csv_file:
+    with open(input_filepath, encoding='latin-1') as csv_file:
 
         csv_reader = csv.reader(csv_file, delimiter=',')
 
