@@ -20,5 +20,5 @@ rm -rf output
 #Run program
 python3.7 allennlp/allennlp/__main__.py train "training_config/contrastive_only.jsonnet" \
  --serialization-dir "output" \
- --overrides "{'train_data_path': 'path/to/output/uitspraken_van_2018_tot_2021.csv'}" \
+ --overrides "{'train_data_path': 'path/to/output/rechtspraak/train.txt'}" \
  --include-package "declutr"
